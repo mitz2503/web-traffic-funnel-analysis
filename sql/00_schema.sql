@@ -1,0 +1,37 @@
+-- One row per session. scripts/run_sql.py loads data/processed/funnel_sessions.csv
+-- into this table before it runs a query file. Do not add sample rows here.
+
+CREATE TABLE sessions (
+  session_date TEXT NOT NULL,
+  user_pseudo_id TEXT NOT NULL,
+  ga_session_id TEXT NOT NULL,
+  session_number INTEGER,
+  weekday_name TEXT,
+  device TEXT,
+  browser TEXT,
+  country TEXT,
+  channel TEXT,
+  channel_method TEXT,
+  session_source TEXT,
+  session_medium TEXT,
+  session_campaign TEXT,
+  user_channel TEXT,
+  user_source TEXT,
+  user_medium TEXT,
+  landing_page TEXT,
+  is_bounce INTEGER,
+  is_engaged INTEGER,
+  n_pageviews INTEGER,
+  n_view_item INTEGER,
+  n_add_to_cart INTEGER,
+  n_begin_checkout INTEGER,
+  n_purchase INTEGER,
+  revenue_usd REAL,
+  flag_view_item INTEGER,
+  flag_add_to_cart INTEGER,
+  flag_begin_checkout INTEGER,
+  flag_purchase INTEGER,
+  flag_closed_add_to_cart INTEGER,
+  flag_closed_purchase INTEGER,
+  saw_promotion INTEGER
+);

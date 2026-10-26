@@ -1,0 +1,8 @@
+# Everything you need for a fresh laptop. SQLite, gzip, and csv are in the
+# Python standard library, so they are not listed here.
+#
+# Python 3.10 or newer.
+# Optional, only if you want Jupyter:  pip install notebook
+# Optional, only if you rebuild from BigQuery:  pip install google-cloud-bigquery db-dtypes
+
+pandas>=2.0,<3

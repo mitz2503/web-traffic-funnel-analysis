@@ -1,0 +1,24 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.DS_Store
+Thumbs.db
+~$*
+*.tmp
+data/raw/_cache/
+.pytest_cache/
+.python-version
+
+# Raw extract and generated session table. Rebuild with the scripts.
+data/
+
+# Study notes and the unfinished exercise file stay on this machine.
+docs/excel_guide.md
+docs/ga_concepts.md
+docs/interview_questions.md
+sql/02_exercises.sql
+solutions/
+outputs/README.md
